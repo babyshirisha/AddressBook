@@ -105,6 +105,18 @@ public class AddressBook implements IAddressBook{
         }
         System.out.println("Please enter the correct first name");
     }
+    public void contactList() {
+        if (contact.isEmpty()) {
+            System.out.println("Your address book is empty.");
+            return;
+        }
+        System.out.println("\n Address Book:");
+        for (PersonDetails person : contact)
+        {
+            System.out.println("contact" + person.getFirstName());
+        }
+
+    }
 
     @Override
     public String toString() {
