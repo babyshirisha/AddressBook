@@ -12,7 +12,7 @@ public class AddressBookSystem {
         Scanner input = new Scanner(System.in);
         char choice;
         do {
-            System.out.println("Select your Option: \n1.Add new Contact \n2.Edit Contact");
+            System.out.println("Select your Option: \n1.Add new Contact \n2.Edit Contact \n3.Delete Contact");
             int option = input.nextInt();
             switch (option) {
                 case 1:
@@ -20,6 +20,9 @@ public class AddressBookSystem {
                     break;
                 case 2:
                     addressBook.editContact();
+                    break;
+                case 3:
+                    addressBook.deleteContact();
                     break;
             }
             System.out.println("Are you wish to continue:  Y?N");

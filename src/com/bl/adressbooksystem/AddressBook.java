@@ -87,6 +87,25 @@ public class AddressBook implements IAddressBook{
             }
             System.out.println("Please enter the correct first name");
         }
+    public void deleteContact() {
+        System.out.println("\nEnter First Name of person You want to delete :- ");
+        String firstName = input.next();
+        String userChoice;
+
+        for (int i = 0; i < contact.size(); i++) {
+            if (contact.get(i).getFirstName().equals(firstName)) {
+                do {
+                    contact.remove(i);
+                    System.out.println("contact deleted");
+                    System.out.println("Are you wish to delete other Address fields: Y?N");
+                    userChoice = input.next();
+                } while (userChoice.toUpperCase().equals("Y"));
+                return;
+            }
+        }
+        System.out.println("Please enter the correct first name");
+    }
+
     @Override
     public String toString() {
         return "AddressBook{" +
