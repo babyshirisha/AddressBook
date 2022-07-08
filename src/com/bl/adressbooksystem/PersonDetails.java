@@ -55,6 +55,38 @@ public class PersonDetails {
     public void setPhoneNumber(Long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public int getZip() {
+        return zip;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public long getPhoneNumber() {
+        return phoneNumber;
+    }
+
     @Override
     public String toString() {
         return "AddressBook{" +
