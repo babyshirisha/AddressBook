@@ -5,4 +5,6 @@ public interface IAddressBook {
 
     void editContact();
     void deleteContact();
+
+    void contactList();
 }
